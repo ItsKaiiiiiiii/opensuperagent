@@ -14,7 +14,7 @@ export class ConsoleChannelIngress {
     steer?: boolean;
     stopTaskId?: string;
   }): IngressResult {
-    // New console requests get a fresh thread so they hit Router (§5.2),
+    // New console requests get a fresh thread so they hit Router,
     // instead of colliding with a prior Task's subscription on a shared thread.
     // Follow-ups that set taskId keep that task's identity as thread.
     const threadId =

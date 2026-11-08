@@ -10,7 +10,7 @@ import type { Task, WorkerDefinitionSpec } from "../types.js";
 import { nowIso } from "../ids.js";
 
 /**
- * Router side-effecting tools (§6.2).
+ * Router side-effecting tools.
  * Each call is idempotent via tool_actions (session_id, tool_call_id).
  */
 export class RouterTools {

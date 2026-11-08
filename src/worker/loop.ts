@@ -5,7 +5,7 @@ import type { SessionManager } from "../session/manager.js";
 import type { InboxItem, Trigger } from "../types.js";
 
 /**
- * Worker turn loop per Task (§7.2).
+ * Worker turn loop: one session per Task, bounded by max_active_tasks.
  * Tool side effects are performed by the session facade (Pizza).
  */
 export class WorkerLoop {

@@ -7,7 +7,7 @@ export type RouteDecision =
   | { kind: "ignore"; reason: string };
 
 /**
- * Deterministic routing (§5.2). Order:
+ * Deterministic routing — no model calls. Priority order:
  * 1. control commands
  * 2. explicit task id (if open; else router)
  * 3. unique open subscription on thread

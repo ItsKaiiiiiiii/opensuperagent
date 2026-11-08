@@ -1,4 +1,4 @@
-/** Shared domain types — mirrors docs/super-agent-architecture.md §3 / §11. */
+/** Shared domain types. All of these are persisted in state.sqlite. */
 
 export type TriggerStatus = "pending" | "routed" | "ignored";
 export type TaskStatus =

@@ -1,5 +1,5 @@
 /**
- * Tagging store wrapper for Pizza SessionEventStore (§9.2).
+ * Tagging store wrapper for the Pizza SessionEventStore.
  *
  * Marks the first USER_MESSAGE of a prompt with idempotency_key = `run:<runId>`.
  * The narrow store interface isolates the wrapper from SDK storage internals.

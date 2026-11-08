@@ -101,7 +101,7 @@ function createSessionWithCleanup(
 }
 
 /**
- * Pizza-backed session facade (§9.2): the durable event log at
+ * Pizza-backed session facade: the durable event log at
  * sessions/<owner>/<id>/events.sqlite gives runs resumable context, and
  * TaggingStore marks each run's first USER_MESSAGE for replay dedup.
  */

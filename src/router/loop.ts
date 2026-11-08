@@ -6,7 +6,7 @@ import type { SessionManager } from "../session/manager.js";
 import { buildRouterSystemPrompt, formatRouterBatch } from "./prompts.js";
 
 /**
- * Router turn loop (§6.1).
+ * Router turn loop.
  * When idle + pending inbox → one Run with all pending inputs.
  * Tool side effects are performed by the session facade (Pizza).
  */

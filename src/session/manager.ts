@@ -68,7 +68,7 @@ export class SessionManager {
   }
 
   /**
-   * Create a Run, bind pending inbox items, submit prompt (§9.2 steps 1–2).
+   * Create a Run, bind pending inbox items, and build the prompt to submit.
    * Returns null if session busy or inbox empty.
    */
   beginRun(

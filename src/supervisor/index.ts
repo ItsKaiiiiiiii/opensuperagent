@@ -3,7 +3,7 @@ import type { AppConfig } from "../config.js";
 import type { SessionManager } from "../session/manager.js";
 
 /**
- * In-process supervisor (§12.3) — runs on an interval.
+ * In-process supervisor — runs on an interval.
  */
 export class Supervisor {
   private timer: NodeJS.Timeout | null = null;

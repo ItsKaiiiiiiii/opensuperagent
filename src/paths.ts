@@ -1,6 +1,6 @@
 import { join } from "node:path";
 
-/** Data directory layout from architecture §16. */
+/** Data directory layout: everything OpenSuperAgent persists lives under this root. */
 export class DataPaths {
   constructor(readonly root: string) {}
 

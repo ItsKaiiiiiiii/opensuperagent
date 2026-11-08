@@ -23,8 +23,8 @@ export interface CommandResult {
 }
 
 /**
- * Command executor (§8.2).
- * Writes Operation first, then starts the process; result.json finalizes status.
+ * Command executor.
+ * Writes the Operation row first, then starts the process; result.json finalizes status.
  */
 export class CommandRunner {
   private readonly children = new Map<string, ChildProcess>();
