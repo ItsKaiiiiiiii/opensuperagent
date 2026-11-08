@@ -608,6 +608,13 @@ h1 {
   padding: 3px 5px;
   border-radius: 3px;
 }
+/* xyflow disables pointer events on non-interactive nodes (nodesDraggable /
+   elementsSelectable are false), which also blocks node content clicks.
+   Re-enable them so node buttons can navigate. */
+.react-flow__node .node-button {
+  pointer-events: all;
+}
+
 .react-flow__handle {
   height: 5px;
   width: 5px;
