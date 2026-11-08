@@ -127,7 +127,9 @@ export function DetailPanel({
   const terminal =
     task && ["completed", "failed", "cancelled"].includes(task.status);
   const loadedSkills = flow?.journal.flatMap((event) => {
-    const payload = event.payload as {
+    // Journal events may carry a null payload (e.g. "assistant" entries);
+    // keep the render resilient instead of crashing the whole panel.
+    const payload = (event.payload ?? {}) as {
       isError?: boolean;
       args?: { action?: string; name?: string; path?: string };
       details?: { builtin?: { name?: string; args?: { action?: string; name?: string; file?: string } } };
